@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа дисков для авто</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: white; padding: 15px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        .product { display: inline-block; width: 30%; margin: 1%; padding: 15px; border: 1px solid #ddd; text-align: center; }
+        footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Магазин автодисков</h1>
+    </header>
+    <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#order">Заказ</a>
+    </nav>
+    <div class="container" id="catalog">
+        <h2>Каталог</h2>
+        <div class="product">
+            <img src="wheel1.jpg" alt="Диск 1" width="100%">
+            <h3>Литой диск R16</h3>
+            <p>Цена: 5000 руб.</p>
+        </div>
+        <div class="product">
+            <img src="wheel2.jpg" alt="Диск 2" width="100%">
+            <h3>Литой диск R17</h3>
+            <p>Цена: 6000 руб.</p>
+        </div>
+        <div class="product">
+            <img src="wheel3.jpg" alt="Диск 3" width="100%">
+            <h3>Литой диск R18</h3>
+            <p>Цена: 7000 руб.</p>
+        </div>
+    </div>
+    <div class="container" id="contacts">
+        <h2>Контакты</h2>
+        <p>Email: info@autowheels.ru</p>
+        <p>Телефон: +7 (900) 123-45-67</p>
+        <p>Адрес: Москва, ул. Примерная, 12</p>
+    </div>
+    <div class="container" id="order">
+        <h2>Заказать диск</h2>
+        <form>
+            <label>Имя:</label>
+            <input type="text" name="name" required><br>
+            <label>Выберите диск:</label>
+            <select name="wheel">
+                <option value="r16">Литой диск R16</option>
+                <option value="r17">Литой диск R17</option>
+                <option value="r18">Литой диск R18</option>
+            </select><br>
+            <label>Телефон:</label>
+            <input type="tel" name="phone" required><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Магазин автодисков. Все права защищены.
+    </footer>
+</body>
+</html>
